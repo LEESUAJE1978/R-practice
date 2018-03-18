@@ -76,6 +76,7 @@ merge(emp,b, all.x=T, by="DEPTNO")
 str(emp)
 str(salgrade)
 emp_sal<-merge(emp, salgrade, all = T)
-a<-subset(emp_sal, ENAME =='SMITH' & SAL >LOSAL)
+a<-subset(emp_sal, SAL >LOSAL)
 b<-subset(a,SAL<HISAL)
+b
 
